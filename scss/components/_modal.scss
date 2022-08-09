@@ -1,0 +1,162 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--timeing), visibility var(--timeing);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.modal {
+  position: absolute;
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: var(--light-bg-cl);
+  transition: opacity var(--timeing), transform var(--timeing);
+  &-btn {
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--dark-txt-cl);
+    background-color: transparent;
+    transition: color var(--timeing);
+  }
+  &-btn:hover,
+  &-btn:focus {
+    color: var(--accent-txt-cl);
+  }
+  &-btn__icon {
+    fill: currentColor;
+  }
+  .backdrop.is-hidden & {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+}
+.register-form {
+  text-align: center;
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    color: var(--dark-txt-cl);
+  }
+  &__group {
+    margin-bottom: 20px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  &__wrap:last-child {
+    margin-bottom: 0;
+  }
+  &__wrapinput {
+    position: relative;
+  }
+  &__label {
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+  }
+  &__input,
+  &__message {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border var(--timeing);
+  }
+  &__input {
+    padding-left: 42px;
+    height: 40px;
+  }
+  &__message {
+    resize: none;
+    height: 120px;
+  }
+  &__message::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &__input:focus,
+  &__message:focus,
+  &__input:hover,
+  &__message:hover {
+    border: 1px solid var(--accent-txt-cl);
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    transition: fill var(--timeing);
+  }
+  &__input:focus + &__icon,
+  &__input:hover + &__icon {
+    fill: var(--accent-txt-cl);
+  }
+}
+.register-form-agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  &__text {
+    user-select: none;
+  }
+  &__link {
+    color: var(--accent-txt-cl);
+    text-underline-position: under;
+  }
+}
+.register-icon-check {
+  opacity: 0;
+  transition: opacity var(--timeing);
+  .register-checkbox:checked + .register-icon & {
+    opacity: 1;
+  }
+}
+.register-icon-uncheck {
+  transition: fill var(--timeing);
+  .register-checkbox:checked + .register-icon & {
+    opacity: 0;
+    transition: opacity var(--timeing);
+  }
+  .register-checkbox:focus + .register-icon &,
+  .register-checkbox:hover + .register-icon & {
+    fill: var(--accent-txt-cl);
+  }
+}

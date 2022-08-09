@@ -1,0 +1,17 @@
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+.no-scroll {
+  overflow: hidden;
+}
+.address {
+  font-style: inherit;
+  color: var(--light-txt-cl);
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

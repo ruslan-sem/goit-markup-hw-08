@@ -1,0 +1,21 @@
+.about {
+  padding-top: 0;
+  &__card {
+    position: relative;
+  }
+  &__text {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+  }
+}

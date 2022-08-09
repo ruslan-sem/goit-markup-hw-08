@@ -1,0 +1,22 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  --main-txt-cl: #757575;
+  --accent-txt-cl: #2196f3;
+  --dark-txt-cl: #212121;
+  --light-txt-cl: #ffffff;
+  --light-link-cl: rgba(255, 255, 255, 0.6);
+  --icon-cl: #afb1b8;
+
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #ffffff;
+  --command-bg-cl: #f5f4fa;
+
+  --header-brd-cl: #ececec;
+
+  --card-gap: 30px;
+  --card-item: 3;
+
+  --timeing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

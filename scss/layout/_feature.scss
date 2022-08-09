@@ -1,0 +1,22 @@
+.feature {
+  &__list {
+    --card-item: 4;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--dark-txt-cl);
+    margin-bottom: 10px;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  }
+}
