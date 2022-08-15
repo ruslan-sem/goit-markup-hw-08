@@ -1,6 +1,12 @@
 .clients {
   &__list {
-    --card-item: 6;
+    --card-item: 2;
+    @media screen and (min-width: 768px) {
+      --card-item: 3;
+    }
+    @media screen and (min-width: 1200px) {
+      --card-item: 6;
+    }
   }
   &__link {
     display: flex;

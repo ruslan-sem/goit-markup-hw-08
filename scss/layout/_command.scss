@@ -1,7 +1,12 @@
 .command {
   background-color: var(--command-bg-cl);
   &__list {
-    --card-item: 4;
+    @media screen and (min-width: 768px) {
+      --card-item: 2;
+    }
+    @media screen and (min-width: 1200px) {
+      --card-item: 4;
+    }
   }
   &__item {
     background: var(--light-bg-cl);

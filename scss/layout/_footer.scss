@@ -31,6 +31,9 @@
 }
 .footer-form {
   display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
   gap: 12px;
   &__email {
     min-width: 358px;
