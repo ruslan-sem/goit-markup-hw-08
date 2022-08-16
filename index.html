@@ -126,14 +126,21 @@
           <ul class="list about__list card-set">
             <li class="card-item">
               <div class="about__card">
-                <img src="./images/img-1.jpg" alt="Рабочее место" width="370" height="294" />
+                <img
+                  srcset="./images\about\img-1@1x_lg.jpg 1x, ./images\about\img-1@2x_lg.jpg 2x"
+                  src="./images\about\img-1@1x_lg.jpg"
+                  alt="Рабочее место"
+                  width="370"
+                  height="294"
+                />
                 <p class="about__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="card-item">
               <div class="about__card">
                 <img
-                  src="./images/img-2.jpg"
+                  srcset="./images\about\img-2@1x_lg.jpg 1x, ./images\about\img-2@2x_lg.jpg 2x"
+                  src="./images\about\img-2@1x_lg.jpg"
                   alt="Домашнее рабочее место"
                   width="370"
                   height="294"
@@ -144,7 +151,8 @@
             <li class="card-item">
               <div class="about__card">
                 <img
-                  src="./images/img-3.jpg"
+                  srcset="./images\about\img-3@1x_lg.jpg 1x, ./images\about\img-3@2x_lg.jpg 2x"
+                  src="./images\about\img-3@1x_lg.jpg"
                   alt="Удаленное рабочее место"
                   width="370"
                   height="294"
@@ -160,13 +168,27 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list command__list card-set">
             <li class="command__item card-item">
-              <img
-                class="command-img"
-                src="./images/img-4.jpg"
-                alt="Фото Игоря"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\command\img-4@1x_lg.jpg 1x, ./images\command\img-4@2x_lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\command\img-4@1x_md.jpg 1x, ./images\command\img-4@2x_md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\command\img-4@1x_sm.jpg 1x, ./images\command\img-4@2x_sm.jpg 2x"
+                />
+                <img
+                  class="command-img"
+                  src="./images/img-4.jpg"
+                  alt="Фото Игоря"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__content">
                 <h3 class="command__header">Игорь Демьяненко</h3>
                 <p class="command__text">Product Designer</p>
@@ -223,13 +245,27 @@
               </div>
             </li>
             <li class="command__item card-item">
-              <img
-                class="command-img"
-                src="./images/img-5.jpg"
-                alt="Фото Ольги"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\command\img-5@1x_lg.jpg 1x, ./images\command\img-5@2x_lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\command\img-5@1x_md.jpg 1x, ./images\command\img-5@2x_md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\command\img-5@1x_sm.jpg 1x, ./images\command\img-5@2x_sm.jpg 2x"
+                />
+                <img
+                  class="command-img"
+                  src="./images/img-5.jpg"
+                  alt="Фото Ольги"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__content">
                 <h3 class="command__header">Ольга Репина</h3>
                 <p class="command__text">Frontend Developer</p>
@@ -286,13 +322,27 @@
               </div>
             </li>
             <li class="command__item card-item">
-              <img
-                class="command-img"
-                src="./images/img-6.jpg"
-                alt="Фото Николая"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\command\img-6@1x_lg.jpg 1x, ./images\command\img-6@2x_lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\command\img-6@1x_md.jpg 1x, ./images\command\img-6@2x_md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\command\img-6@1x_sm.jpg 1x, ./images\command\img-6@2x_sm.jpg 2x"
+                />
+                <img
+                  class="command-img"
+                  src="./images/img-6.jpg"
+                  alt="Фото Николая"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__content">
                 <h3 class="command__header">Николай Тарасов</h3>
                 <p class="command__text">Marketing</p>
@@ -349,13 +399,27 @@
               </div>
             </li>
             <li class="command__item card-item">
-              <img
-                class="command-img"
-                src="./images/img-7.jpg"
-                alt="Фото Михаила"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\command\img-7@1x_lg.jpg 1x, ./images\command\img-7@2x_lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\command\img-7@1x_md.jpg 1x, ./images\command\img-7@2x_md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images\command\img-7@1x_sm.jpg 1x, ./images\command\img-7@2x_sm.jpg 2x"
+                />
+                <img
+                  class="command-img"
+                  src="./images/img-7.jpg"
+                  alt="Фото Михаила"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__content">
                 <h3 class="command__header">Михаил Ермаков</h3>
                 <p class="command__text">UI Designer</p>
