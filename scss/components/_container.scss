@@ -13,14 +13,15 @@
     width: 1200px;
   }
   &--header {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
     }
   }
   &--footer {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       display: flex;
+      flex-wrap: wrap;
       gap: 70px;
       align-items: baseline;
     }
