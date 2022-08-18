@@ -115,18 +115,26 @@ img {
             align-items: center;
   }
 }
+.container--footer {
+  gap: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {
   .container--footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 70px;
-    row-gap: 0;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    gap: 70px;
   }
 }
 
@@ -223,9 +231,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 50px;
   margin-left: auto;
 }
@@ -236,11 +241,9 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-line-pack: left;
-        align-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -365,7 +368,8 @@ img {
 .modal {
   position: absolute;
   padding: 40px;
-  width: 450px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   min-height: 581px;
   top: 50%;
   left: 50%;
@@ -380,9 +384,16 @@ img {
   transition: opacity var(--timeing), transform var(--timeing);
   transition: opacity var(--timeing), transform var(--timeing), -webkit-transform var(--timeing);
 }
+@media screen and (orientation: landscape) {
+  .modal {
+    max-height: 100%;
+    min-height: auto;
+    overflow: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 .modal-btn {
@@ -946,7 +957,6 @@ img {
 }
 .footer__logo {
   display: inline-block;
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
   .footer__logo {
@@ -1009,7 +1019,6 @@ img {
   .footer-subscribe-title {
     display: block;
     text-align: center;
-    margin-top: 60px;
   }
 }
 

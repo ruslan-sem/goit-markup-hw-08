@@ -19,12 +19,19 @@
     }
   }
   &--footer {
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
     @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 70px;
-      row-gap: 0;
+      // gap: 70px;
+      // row-gap: 0;
       align-items: baseline;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+      // row-gap: 0;
+      // align-items: baseline;
     }
   }
 }
